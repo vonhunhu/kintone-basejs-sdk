@@ -32,7 +32,7 @@ describe('deleteRecords function', () => {
         app: 2,
         ids: [1]
       };
-      nock(URI + ':443')
+      nock(URI + ':4431')
         .intercept(API_ROUTE.RECORDS, 'DELETE', (rqBody) => {
           expect(rqBody.app).toEqual(data.app);
           expect(rqBody.ids).toEqual(data.ids);
