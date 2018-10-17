@@ -18,7 +18,5 @@ jobs:
 
     steps:
       - checkout
-      - run: echo "Start"
       - run: npm install
       - run: npm test
-      - run: echo "End"
